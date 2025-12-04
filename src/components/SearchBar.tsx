@@ -27,7 +27,7 @@ const StyledInput = styled(Input)`
   }
 `;
 
-const StyledSelect = styled(Select)`
+const StyledSelect = styled(Select<string>)`
   width: 150px;
   height: 48px;
 
@@ -58,7 +58,7 @@ const SearchBar = ({ onSearch, onFilterLocation }: SearchBarProps) => {
       />
       <StyledSelect
         defaultValue="all"
-        onChange={onFilterLocation}
+        onChange={(value) => onFilterLocation(value as string)}
         options={[
           { value: 'all', label: '전체 지역' },
           { value: '서울', label: '서울' },
