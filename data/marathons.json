@@ -1,0 +1,115 @@
+[
+    {
+        "id": 1,
+        "title": "2024 서울 국제 마라톤",
+        "date": "2024-03-17",
+        "location": "서울",
+        "distances": [
+            "Full",
+            "10km"
+        ],
+        "price": "50,000원",
+        "imageUrl": "https://images.unsplash.com/photo-1552674605-4694c0cc5ce9?q=80&w=1000&auto=format&fit=crop",
+        "description": "서울 도심을 달리는 국내 최대 규모의 마라톤 대회입니다."
+    },
+    {
+        "id": 2,
+        "title": "제10회 부산 바다 마라톤",
+        "date": "2024-04-21",
+        "location": "부산",
+        "distances": [
+            "Half",
+            "10km",
+            "5km"
+        ],
+        "price": "40,000원",
+        "imageUrl": "https://images.unsplash.com/photo-1533561797500-4fad4750814e?q=80&w=1000&auto=format&fit=crop",
+        "description": "광안대교를 건너며 부산의 바다를 만끽하세요."
+    },
+    {
+        "id": 3,
+        "title": "경주 벚꽃 마라톤",
+        "date": "2024-04-06",
+        "location": "경주",
+        "distances": [
+            "Full",
+            "Half",
+            "10km",
+            "5km"
+        ],
+        "price": "45,000원",
+        "imageUrl": "https://images.unsplash.com/photo-1522845015757-50bce044e5da?q=80&w=1000&auto=format&fit=crop",
+        "description": "아름다운 벚꽃과 함께 천년고도 경주를 달리는 특별한 경험."
+    },
+    {
+        "id": 4,
+        "title": "제주 감귤 마라톤",
+        "date": "2024-11-10",
+        "location": "제주",
+        "distances": [
+            "Full",
+            "Half",
+            "10km"
+        ],
+        "price": "35,000원",
+        "imageUrl": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?q=80&w=1000&auto=format&fit=crop",
+        "description": "제주의 아름다운 자연 속에서 달리는 힐링 마라톤."
+    },
+    {
+        "id": 5,
+        "title": "춘천 호반 마라톤",
+        "date": "2024-10-27",
+        "location": "춘천",
+        "distances": [
+            "Full",
+            "Half",
+            "10km"
+        ],
+        "price": "45,000원",
+        "imageUrl": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=1000&auto=format&fit=crop",
+        "description": "의암호를 따라 달리는 환상적인 코스."
+    },
+    {
+        "id": 6,
+        "title": "인천 송도 국제 마라톤",
+        "date": "2024-09-24",
+        "location": "인천",
+        "distances": [
+            "Half",
+            "10km",
+            "5km"
+        ],
+        "price": "40,000원",
+        "imageUrl": "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?q=80&w=1000&auto=format&fit=crop",
+        "description": "송도국제도시의 현대적인 풍경을 배경으로 달리는 레이스."
+    },
+    {
+        "id": 7,
+        "title": "대구 국제 마라톤",
+        "date": "2024-04-07",
+        "location": "대구",
+        "distances": [
+            "Full",
+            "Half",
+            "10km"
+        ],
+        "price": "50,000원",
+        "imageUrl": "https://images.unsplash.com/photo-1596727147705-54a9d75f5f94?q=80&w=1000&auto=format&fit=crop",
+        "description": "국제 육상 도시 대구에서 펼쳐지는 엘리트 및 마스터즈 대회."
+    },
+    {
+        "id": 8,
+        "title": "군산 새만금 마라톤",
+        "date": "2024-04-14",
+        "location": "군산",
+        "distances": [
+            "Full",
+            "Half",
+            "10km",
+            "5km"
+        ],
+        "price": "40,000원",
+        "imageUrl": "https://images.unsplash.com/photo-1530549387789-4c1017266635?q=80&w=1000&auto=format&fit=crop",
+        "description": "세계 최장 방조제인 새만금 방조제를 달리는 이색 코스."
+    }
+]
