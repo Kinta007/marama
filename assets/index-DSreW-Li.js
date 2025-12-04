@@ -418,7 +418,7 @@ html body {
   span {
     color: ${({theme:e})=>e.colors.primary};
   }
-`,KF=()=>{const[e,t]=f.useState([]),[r,n]=f.useState([]),[o,i]=f.useState(""),[a,l]=f.useState("all");return f.useEffect(()=>{fetch("/data/marathons.json").then(s=>s.json()).then(s=>{t(s),n(s)}).catch(s=>console.error("Failed to load marathons:",s))},[]),f.useEffect(()=>{let s=e;o&&(s=s.filter(u=>u.title.toLowerCase().includes(o.toLowerCase()))),a!=="all"&&(s=s.filter(u=>u.location===a)),n(s)},[o,a,e]),Xe.jsxs(UF,{children:[Xe.jsxs(GF,{children:["Find Your ",Xe.jsx("span",{children:"Race"})]}),Xe.jsx(EF,{onSearch:i,onFilterLocation:l}),Xe.jsx(WF,{marathons:r})]})},qF=Nt.div`
+`,KF=()=>{const[e,t]=f.useState([]),[r,n]=f.useState([]),[o,i]=f.useState(""),[a,l]=f.useState("all");return f.useEffect(()=>{fetch("/marama/data/marathons.json").then(u=>{if(!u.ok)throw new Error(`Failed to load marathons: ${u.status}`);return u.json()}).then(u=>{t(u),n(u)}).catch(u=>console.error("Failed to load marathons:",u))},[]),f.useEffect(()=>{let s=e;o&&(s=s.filter(u=>u.title.toLowerCase().includes(o.toLowerCase()))),a!=="all"&&(s=s.filter(u=>u.location===a)),n(s)},[o,a,e]),Xe.jsxs(UF,{children:[Xe.jsxs(GF,{children:["Find Your ",Xe.jsx("span",{children:"Race"})]}),Xe.jsx(EF,{onSearch:i,onFilterLocation:l}),Xe.jsx(WF,{marathons:r})]})},qF=Nt.div`
   max-width: 100%;
   min-height: 100vh;
   display: flex;
