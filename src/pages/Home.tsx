@@ -26,9 +26,15 @@ const Home = () => {
   const [locationFilter, setLocationFilter] = useState('all');
 
   useEffect(() => {
-    // Load data from JSON file
-    fetch('/data/marathons.json')
-      .then((res) => res.json())
+    const baseUrl = import.meta.env.BASE_URL; // <-- Vite base 경로
+
+    fetch(`${baseUrl}data/marathons.json`)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`Failed to load marathons: ${res.status}`);
+        }
+        return res.json();
+      })
       .then((data) => {
         setMarathons(data);
         setFilteredMarathons(data);
@@ -40,7 +46,7 @@ const Home = () => {
     let result = marathons;
 
     if (searchTerm) {
-      result = result.filter((m) => 
+      result = result.filter((m) =>
         m.title.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
@@ -54,10 +60,12 @@ const Home = () => {
 
   return (
     <HomeContainer>
-      <Title>Find Your <span>Race</span></Title>
-      <SearchBar 
-        onSearch={setSearchTerm} 
-        onFilterLocation={setLocationFilter} 
+      <Title>
+        Find Your <span>Race</span>
+      </Title>
+      <SearchBar
+        onSearch={setSearchTerm}
+        onFilterLocation={setLocationFilter}
       />
       <MarathonList marathons={filteredMarathons} />
     </HomeContainer>
